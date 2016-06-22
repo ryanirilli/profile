@@ -1,0 +1,10 @@
+.drawer__body {
+  height: 0;
+  @include vendor(transition, height 500ms ease);
+  overflow: hidden;
+}
+
+.drawer__body--after-open {
+  overflow: visible;
+  height: auto !important;
+}

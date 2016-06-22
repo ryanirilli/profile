@@ -16,11 +16,13 @@ System.config({
   map: {
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
+    "classnames": "npm:classnames@2.2.5",
     "core-js": "npm:core-js@1.2.6",
     "immutable": "npm:immutable@3.8.1",
     "inuit-box-sizing": "npm:inuit-box-sizing@0.2.0",
     "inuit-defaults": "npm:inuit-defaults@0.2.3",
     "inuit-functions": "npm:inuit-functions@0.2.0",
+    "inuit-layout": "npm:inuit-layout@0.2.2",
     "inuit-mixins": "npm:inuit-mixins@0.2.3",
     "inuit-normalize": "npm:inuit-normalize@3.0.3",
     "inuit-page": "npm:inuit-page@0.2.1",
@@ -403,6 +405,10 @@ System.config({
       "falafel": "npm:falafel@1.2.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "through2": "npm:through2@0.6.5"
+    },
+    "npm:inuit-layout@0.2.2": {
+      "inuit-defaults": "npm:inuit-defaults@0.2.3",
+      "inuit-functions": "npm:inuit-functions@0.2.0"
     },
     "npm:inuit-mixins@0.2.3": {
       "inuit-defaults": "npm:inuit-defaults@0.2.3"

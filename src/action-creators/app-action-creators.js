@@ -1,6 +1,6 @@
-export function updateSampleProperty(sampleProperty) {
+export function setIsHomepageToolsListOpen(isHomepageToolsListOpen) {
   return {
-    type: 'UPDATE_SAMPLE_PROPERTY',
-    sampleProperty
+    type: 'SET_IS_HOMEPAGE_TOOL_LIST_OPEN',
+    isHomepageToolsListOpen
   }
 }

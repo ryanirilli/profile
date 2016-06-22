@@ -1,0 +1,7 @@
+@mixin vendor($prop, $val) {
+  -webkit-#{$prop}: #{$val};
+  -ms-#{$prop}: #{$val};
+  -moz-#{$prop}: #{$val};
+  -o-#{$prop}: #{$val};
+  #{$prop}: #{$val};
+}

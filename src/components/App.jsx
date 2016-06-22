@@ -1,6 +1,8 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { setIsHomepageToolsListOpen } from './../action-creators/app-action-creators';
+import Drawer from './Drawer.jsx!';
 
 export const App = React.createClass({
 
@@ -44,15 +46,58 @@ export const App = React.createClass({
   },
 
   renderIntroSection() {
+    const { setIsHomepageToolsListOpen, isHomepageToolsListOpen } = this.props;
     return <div className="bg-white">
       <div className="text-center u-pv++ palm-pv">
-        <h2 className="u-mb+">I build great web apps using modern tools</h2>
+        <h2 className="u-mb+">
+          I build <span className="color-4">great</span> web apps using modern tools
+        </h2>
         <i className="icon-data" style={{fontSize: '100px'}}></i>
+
         {this.renderDottedLine()}
         <img src="/static/img/redux-logo.svg" className="u-100px" />
         <img src="/static/img/react-logo.svg" className="u-100px" />
         {this.renderDottedLine()}
         {this.renderDeviceIcons()}
+
+        <div className="text-center u-mt+">
+          <button className="btn" onClick={() => setIsHomepageToolsListOpen(!isHomepageToolsListOpen)}>
+            See the complete tools list
+          </button>
+        </div>
+
+        <Drawer isOpen={this.props.isHomepageToolsListOpen} className="opacity-0 transition-opacity" afterOpenClass="opacity-10">
+
+          <div className="section u-pt+">
+
+            <div className="layout">
+              <div className="layout__item u-1/3">
+                <div className="text-center">
+                  <img src="/static/img/node-logo.svg" className="u-200px" />
+                  <p>
+                    Node is at the backbone of my work. it provides the environment for me to run my app in the browser and
+                    write services to fetch data from all over the cloud.
+                  </p>
+                </div>
+              </div>
+              <div className="layout__item u-1/3">
+                <div className="text-center">
+                  <img src="/static/img/gulp-logo.png" className="u-75px" />
+                </div>
+              </div>
+              <div className="layout__item u-1/3">
+                <div className="text-center">
+                  <img src="/static/img/grunt-logo.png" className="u-100px" />
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+        </Drawer>
+
       </div>
     </div>
   },
@@ -80,11 +125,13 @@ export const App = React.createClass({
 });
 
 function mapStateToProps(state) {
-  return {};
+  return {
+    isHomepageToolsListOpen: state.app.get('isHomepageToolsListOpen')
+  };
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({}, dispatch);
+  return bindActionCreators({ setIsHomepageToolsListOpen }, dispatch);
 }
 
 export const AppContainer = connect(mapStateToProps, mapDispatchToProps)(App);
