@@ -1,5 +1,5 @@
-$bgColors: #004358, #1F8A70, #BEDB39, #FFE11A, #FD7400;
-$colors: #FFFFFF, #FFFFFF, #83923f, #FFFFFF, #FFFFFF;
+$bgColors: #2C3E50, #E74C3C, #ECF0F1, #3498DB, #2980B9;
+$colors: #FFFFFF, #FFFFFF, #2980B9, #FFFFFF, #FFFFFF;
 @for $i from 1 through length($bgColors) {
   $bgColor: nth($bgColors, $i);
   $color: nth($colors, $i);

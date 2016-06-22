@@ -13,7 +13,9 @@
 @import 'jspm:inuit-page/base.page';
 
 @import "03-elements";
+
 @import "04-objects.bgs";
+@import "04-objects.icons";
 @import "04-objects.page";
 
 @import "jspm:inuit-spacing/_trumps.spacing";
@@ -23,6 +25,7 @@
 
 @import "07-trumps.text";
 @import "07-trumps.widths";
+
 
 .ib {
   display: inline-block;
@@ -43,4 +46,10 @@
 .circle-img__img {
   width: 150%;
   display: block;
+}
+
+.dotted-line {
+  position: relative;
+  top: -30px;
+  margin: 0 14px;
 }
