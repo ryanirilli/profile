@@ -1,6 +1,5 @@
-## Why?
-
-Because setting up a project can take a while, we thought it would be handy to make our tried and true front end development pipeline available to the world so any developer can use it. It's by no means the most sophisticated setup and we will surely get trolls complaining about some of our opinions, but hey, clone it, fork it, tear it apart, we really don't care.
+## My Personal Website
+Showcasing my recent work, experiments and musings.
 
 ## Install
 
