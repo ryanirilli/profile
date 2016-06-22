@@ -1,8 +1,46 @@
-.app-container {
-  text-align: center;
+@import "01-settings.inuit-spacing";
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+@import "jspm:inuit-defaults/settings.defaults";
+@import "jspm:inuit-responsive-settings/settings.responsive";
+@import 'jspm:inuit-functions/tools.functions';
+@import 'jspm:inuit-tools-widths/tools.widths';
+@import 'jspm:inuit-responsive-tools/tools.responsive';
+@import 'jspm:inuit-mixins/tools.mixins';
+@import 'jspm:inuit-normalize/generic.normalize';
+@import 'jspm:inuit-box-sizing/generic.box-sizing';
+@import 'jspm:inuit-page/base.page';
+
+@import "03-elements";
+@import "04-objects.bgs";
+@import "04-objects.page";
+
+@import "jspm:inuit-spacing/_trumps.spacing";
+@import "jspm:inuit-responsive-spacing/_trumps.spacing-responsive";
+@import "jspm:inuit-widths/trumps.widths";
+@import "jspm:inuit-responsive-widths/trumps.widths-responsive";
+
+@import "07-trumps.text";
+@import "07-trumps.widths";
+
+.ib {
+  display: inline-block;
 }
 
-.unsullied-logo {
-  max-width: 400px;
-  margin-top: 100px;
+.circle-img {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  @include media-query(palm) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.circle-img__img {
+  width: 150%;
+  display: block;
 }

@@ -18,6 +18,20 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.6",
     "immutable": "npm:immutable@3.8.1",
+    "inuit-box-sizing": "npm:inuit-box-sizing@0.2.0",
+    "inuit-defaults": "npm:inuit-defaults@0.2.3",
+    "inuit-functions": "npm:inuit-functions@0.2.0",
+    "inuit-mixins": "npm:inuit-mixins@0.2.3",
+    "inuit-normalize": "npm:inuit-normalize@3.0.3",
+    "inuit-page": "npm:inuit-page@0.2.1",
+    "inuit-responsive-settings": "npm:inuit-responsive-settings@0.1.5",
+    "inuit-responsive-spacing": "npm:inuit-responsive-spacing@0.0.8",
+    "inuit-responsive-tools": "npm:inuit-responsive-tools@0.1.3",
+    "inuit-responsive-widths": "npm:inuit-responsive-widths@0.2.2",
+    "inuit-spacing": "npm:inuit-spacing@0.7.0",
+    "inuit-starter-kit": "npm:inuit-starter-kit@0.2.9",
+    "inuit-tools-widths": "npm:inuit-tools-widths@0.1.4",
+    "inuit-widths": "npm:inuit-widths@0.4.2",
     "jsx": "github:floatdrop/plugin-jsx@1.2.1",
     "react": "npm:react@15.0.1",
     "react-addons-test-utils": "npm:react-addons-test-utils@15.0.1",
@@ -389,6 +403,52 @@ System.config({
       "falafel": "npm:falafel@1.2.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "through2": "npm:through2@0.6.5"
+    },
+    "npm:inuit-mixins@0.2.3": {
+      "inuit-defaults": "npm:inuit-defaults@0.2.3"
+    },
+    "npm:inuit-page@0.2.1": {
+      "inuit-defaults": "npm:inuit-defaults@0.2.3",
+      "inuit-mixins": "npm:inuit-mixins@0.2.3"
+    },
+    "npm:inuit-responsive-spacing@0.0.8": {
+      "inuit-defaults": "npm:inuit-defaults@0.2.3",
+      "inuit-responsive-settings": "npm:inuit-responsive-settings@0.1.5",
+      "inuit-responsive-tools": "npm:inuit-responsive-tools@0.1.3",
+      "inuit-spacing": "npm:inuit-spacing@0.6.4"
+    },
+    "npm:inuit-responsive-tools@0.1.3": {
+      "inuit-responsive-settings": "npm:inuit-responsive-settings@0.1.5"
+    },
+    "npm:inuit-responsive-widths@0.2.2": {
+      "inuit-defaults": "npm:inuit-defaults@0.2.3",
+      "inuit-responsive-settings": "npm:inuit-responsive-settings@0.1.5",
+      "inuit-responsive-tools": "npm:inuit-responsive-tools@0.1.3",
+      "inuit-tools-widths": "npm:inuit-tools-widths@0.1.4",
+      "inuit-widths": "npm:inuit-widths@0.4.2"
+    },
+    "npm:inuit-spacing@0.6.4": {
+      "inuit-defaults": "npm:inuit-defaults@0.2.3",
+      "inuit-functions": "npm:inuit-functions@0.2.0"
+    },
+    "npm:inuit-spacing@0.7.0": {
+      "inuit-defaults": "npm:inuit-defaults@0.2.3",
+      "inuit-functions": "npm:inuit-functions@0.2.0"
+    },
+    "npm:inuit-starter-kit@0.2.9": {
+      "inuit-box-sizing": "npm:inuit-box-sizing@0.2.0",
+      "inuit-defaults": "npm:inuit-defaults@0.2.3",
+      "inuit-functions": "npm:inuit-functions@0.2.0",
+      "inuit-mixins": "npm:inuit-mixins@0.2.3",
+      "inuit-normalize": "npm:inuit-normalize@3.0.2",
+      "inuit-page": "npm:inuit-page@0.2.1"
+    },
+    "npm:inuit-tools-widths@0.1.4": {
+      "inuit-defaults": "npm:inuit-defaults@0.2.3"
+    },
+    "npm:inuit-widths@0.4.2": {
+      "inuit-defaults": "npm:inuit-defaults@0.2.3",
+      "inuit-tools-widths": "npm:inuit-tools-widths@0.1.4"
     },
     "npm:invariant@2.2.1": {
       "loose-envify": "npm:loose-envify@1.1.0",

@@ -1,0 +1,41 @@
+$bgColors: #004358, #1F8A70, #BEDB39, #FFE11A, #FD7400;
+$colors: #FFFFFF, #FFFFFF, #83923f, #FFFFFF, #FFFFFF;
+@for $i from 1 through length($bgColors) {
+  $bgColor: nth($bgColors, $i);
+  $color: nth($colors, $i);
+  .color-#{$i} {
+    color: $bgColor;
+  }
+  .bg-color-#{$i} {
+    background-color: $bgColor;
+    color: $color;
+  }
+}
+
+.bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-white {
+  background-color: white;
+  color: #333;
+}
+
+.bg-blue {
+  background: #004358;
+}
+
+.bg-green {
+  background: #1F8A70;
+}
+
+.bg-light {
+  color: rgba(white, 1);
+}
+
+
+.bg-fixed {
+  background-attachment: fixed;
+  background-position-y: 0;
+}

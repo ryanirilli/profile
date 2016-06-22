@@ -9,7 +9,7 @@ const cssDir          = `${staticAssetsDir}/css`;
 const jsDir           = `${staticAssetsDir}/js`;
 const imgDir          = `${staticAssetsDir}/img`;
 const fontsDir        = `${staticAssetsDir}/fonts`;
-const devServerPort   = 8080;
+const devServerPort   = 8090;
 
 /************************************
  * Require Libs
@@ -96,6 +96,7 @@ function compileSass() {
   return new Promise(resolve => {
     const stream = gulp.src('src/styles/app.scss')
     .pipe(sass({
+      errLogToConsole: true,
       outputStyle: 'compressed',
       importer: sassJspm.importer
     }));
