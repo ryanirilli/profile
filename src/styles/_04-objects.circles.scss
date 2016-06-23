@@ -1,0 +1,20 @@
+.circle-img {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  @include media-query(palm) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.circle-img--bordered {
+  border: 3px solid;
+}
+
+.circle-img__img {
+  width: 150%;
+  display: block;
+}

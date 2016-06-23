@@ -1,0 +1,9 @@
+.homepage-dotted-line {
+  position: relative;
+  top: 35px;
+  margin: 0 14px;
+  @include media-query(palm) {
+    top: -35px;
+    margin: 75px 0 0 0;
+  }
+}

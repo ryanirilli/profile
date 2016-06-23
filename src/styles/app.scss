@@ -1,3 +1,4 @@
+@import "01-settings.inuit-buttons";
 @import "01-settings.inuit-spacing";
 @import "01-settings.inuit-layout";
 
@@ -17,87 +18,31 @@
 
 @import "03-elements";
 
+@import 'jspm:inuit-buttons/objects.buttons';
 @import 'jspm:inuit-layout/objects.layout';
 
+@import "04-objects.animations";
+@import "04-objects.banners";
 @import "04-objects.bgs";
+@import "04-objects.btns";
+@import "04-objects.circles";
+@import "04-objects.footer";
 @import "04-objects.icons";
+@import "04-objects.links";
+@import "04-objects.lists";
 @import "04-objects.page";
 
 @import "05-components.drawer";
+@import "05-components.homepage";
 
 @import "jspm:inuit-spacing/_trumps.spacing";
 @import "jspm:inuit-responsive-spacing/_trumps.spacing-responsive";
 @import "jspm:inuit-widths/trumps.widths";
 @import "jspm:inuit-responsive-widths/trumps.widths-responsive";
 
+@import "07-trumps.display";
 @import "07-trumps.text";
 @import "07-trumps.widths";
 
 
-.list-bare {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
-.list-inline {
-  li {
-    display: inline-block;
-  }
-}
-
-.links-no-underline {
-  a { text-decoration: none; }
-}
-
-.ib {
-  display: inline-block;
-}
-
-.transition-opacity {
-  @include vendor(transition, opacity 1s ease);
-}
-
-.stroke-animation {
-  @include animation('stroke-animation 30s infinite');
-  @include vendor(animation-timing-function, linear);
-}
-
-@include keyframes(stroke-animation) {
-  0%   { stroke-dashoffset: 0;     }
-  100% { stroke-dashoffset: 2000px; }
-}
-
-
-@for $i from 0 through 10 {
-  .opacity-#{$i} {
-    opacity: $i/10;
-  }
-}
-
-.circle-img {
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 100px;
-  width: 100px;
-  height: 100px;
-  @include media-query(palm) {
-    width: 70px;
-    height: 70px;
-  }
-}
-
-.circle-img--bordered {
-  border: 3px solid;
-}
-
-.circle-img__img {
-  width: 150%;
-  display: block;
-}
-
-.dotted-line {
-  position: relative;
-  top: -30px;
-  margin: 0 14px;
-}

@@ -1,0 +1,13 @@
+.transition-opacity {
+  @include vendor(transition, opacity 1s ease);
+}
+
+.stroke-animation {
+  @include animation('stroke-animation 30s infinite');
+  @include vendor(animation-timing-function, linear);
+}
+@include keyframes(stroke-animation) {
+  0%   { stroke-dashoffset: 0;     }
+  100% { stroke-dashoffset: -2000px; }
+}
+

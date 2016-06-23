@@ -1,0 +1,7 @@
+.links-no-underline {
+  &, a { text-decoration: none; }
+}
+
+.link-with-icon {
+  i { position: relative; top: 2px;}
+}

@@ -1,0 +1,4 @@
+.btn {
+  &:hover, &:focus { background-color: darken($inuit-btn-background, 10%); }
+  &:focus { outline: none; }
+}

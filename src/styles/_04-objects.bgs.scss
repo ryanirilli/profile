@@ -27,14 +27,32 @@
 
 $bgColors: #2C3E50, #E74C3C, #ECF0F1, #3498DB, #2980B9;
 $colors: #FFFFFF, #FFFFFF, #2980B9, #FFFFFF, #FFFFFF;
+$btnBgColors: #2C3E50, #2C3E50, #2C3E50, #FFFFFF, #2C3E50;
+$btnColors: #FFFFFF, #FFFFFF, #FFFFFF, #3498DB, #FFFFFF;
+
+
+
 @for $i from 1 through length($bgColors) {
   $bgColor: nth($bgColors, $i);
   $color: nth($colors, $i);
+  $btnBgColor: nth($btnBgColors, $i);
+  $btnColor: nth($btnColors, $i);
   .color-#{$i} {
     &, * { color: $bgColor; }
   }
   .bg-color-#{$i} {
-    background-color: $bgColor;
-    color: $color;
+    &, .banner__content {
+      background-color: $bgColor;
+      color: $color;
+    }
+    .btn {
+      background-color: $btnBgColor;
+      color: $btnColor;
+      border-color: $btnBgColor;
+      &:hover, &:focus {
+        background-color: $btnColor;
+        color: $btnBgColor;
+      }
+    }
   }
 }

@@ -4,6 +4,7 @@
       "classnames": "npm:classnames@^2.2.5",
       "immutable": "npm:immutable@^3.8.1",
       "inuit-box-sizing": "npm:inuit-box-sizing@^0.2.0",
+      "inuit-buttons": "npm:inuit-buttons@^0.4.2",
       "inuit-defaults": "npm:inuit-defaults@^0.2.3",
       "inuit-functions": "npm:inuit-functions@^0.2.0",
       "inuit-layout": "npm:inuit-layout@^0.2.2",
