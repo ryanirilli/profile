@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'icomoon';
     src:
-        url('fonts/icomoon.ttf?w91clt') format('truetype'),
-        url('fonts/icomoon.woff?w91clt') format('woff'),
-        url('fonts/icomoon.svg?w91clt#icomoon') format('svg');
+        url('fonts/icomoon.ttf?5jqbva') format('truetype'),
+        url('fonts/icomoon.woff?5jqbva') format('woff'),
+        url('fonts/icomoon.svg?5jqbva#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -23,6 +23,21 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-linkedin:before {
+    content: "\e906";
+}
+.icon-twitter:before {
+    content: "\e903";
+}
+.icon-github:before {
+    content: "\e904";
+}
+.icon-medium:before {
+    content: "\e905";
+}
+.icon-display:before {
+    content: "\e900";
+}
 .icon-data:before {
     content: "\e902";
 }

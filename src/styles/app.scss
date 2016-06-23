@@ -34,6 +34,22 @@
 @import "07-trumps.widths";
 
 
+.list-bare {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-inline {
+  li {
+    display: inline-block;
+  }
+}
+
+.links-no-underline {
+  a { text-decoration: none; }
+}
+
 .ib {
   display: inline-block;
 }
@@ -41,6 +57,17 @@
 .transition-opacity {
   @include vendor(transition, opacity 1s ease);
 }
+
+.stroke-animation {
+  @include animation('stroke-animation 30s infinite');
+  @include vendor(animation-timing-function, linear);
+}
+
+@include keyframes(stroke-animation) {
+  0%   { stroke-dashoffset: 0;     }
+  100% { stroke-dashoffset: 2000px; }
+}
+
 
 @for $i from 0 through 10 {
   .opacity-#{$i} {
@@ -58,6 +85,10 @@
     width: 70px;
     height: 70px;
   }
+}
+
+.circle-img--bordered {
+  border: 3px solid;
 }
 
 .circle-img__img {

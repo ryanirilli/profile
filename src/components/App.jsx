@@ -26,11 +26,11 @@ export const App = React.createClass({
   },
 
   renderHeader() {
-    return <div className="bg-light bg-color-1">
+    return <div className="bg-dark bg-color-1">
       <div className="section u-pb++">
         <div className="text-center">
 
-          <div className="circle-img u-mt++">
+          <div className="circle-img circle-img--bordered u-mt++">
             <img className="circle-img__img" src="/static/img/me.jpg" />
           </div>
 
@@ -40,6 +40,23 @@ export const App = React.createClass({
           <p className="text-italic">
             Interaction Developer, Front End Engineer, Visual Designer
           </p>
+
+          <ul className="list-bare list-inline links-no-underline medium-icons color-4">
+            <li>
+              <a href="https://github.com/ryanirilli" className="icon-github u-ph-"></a>
+            </li>
+            <li>
+              <a href="https://medium.com/@ryanirilli" className="icon-medium u-ph-"></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/ryanirilli" className="icon-twitter u-ph-"></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ryanirilli" className="icon-linkedin u-ph-"></a>
+            </li>
+          </ul>
+
+
         </div>
       </div>
     </div>
@@ -73,7 +90,7 @@ export const App = React.createClass({
             <div className="layout">
               <div className="layout__item u-1/3">
                 <div className="text-center">
-                  <img src="/static/img/node-logo.svg" className="u-200px" />
+                  <img src="/static/img/js-logo.svg" className="u-100px" />
                   <p>
                     Node is at the backbone of my work. it provides the environment for me to run my app in the browser and
                     write services to fetch data from all over the cloud.
@@ -82,7 +99,11 @@ export const App = React.createClass({
               </div>
               <div className="layout__item u-1/3">
                 <div className="text-center">
-                  <img src="/static/img/gulp-logo.png" className="u-75px" />
+                  <img src="/static/img/sass-logo.svg" className="u-75px" />
+                  <p>
+                    Node is at the backbone of my work. it provides the environment for me to run my app in the browser and
+                    write services to fetch data from all over the cloud.
+                  </p>
                 </div>
               </div>
               <div className="layout__item u-1/3">
@@ -104,7 +125,8 @@ export const App = React.createClass({
 
   renderDottedLine(width = '100px') {
     return <svg width={width} height="35px" viewBox="0 0 300 1" className="dotted-line">
-      <line x1="10"
+      <line className="stroke-animation" 
+            x1="10"
             x2="300"
             y1="0"
             y2="0"
