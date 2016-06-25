@@ -59,7 +59,7 @@ export const App = React.createClass({
   renderIntroSection() {
     return <div className="bg-white">
       <div className="text-center u-pv++ palm-pv">
-        <h2 className="u-mb+">
+        <h2 className="u-mb+ u-ph">
           I build <span className="color-4">great</span> web apps using modern tools
         </h2>
         <div className="section">
