@@ -7,55 +7,11 @@ export const App = React.createClass({
   render() {
     return <div>
       <div className="app-container">
-
         {this.renderHeader()}
-
         {this.renderIntroSection()}
-
-        <div className="bg-dark bg-color-4">
-
-          <div className="banner">
-            <div className="banner__content">
-              Latest Projects
-            </div>
-          </div>
-
-          <div className="u-pv++ text-center">
-            <h1>Visaudio</h1>
-            <p>Play all your Facebook photos to the beat of music</p>
-            <a className="btn" href="http://visaudio.me/" target="_blank">
-              <i className="icon-new-tab"></i> Launch App
-            </a>
-          </div>
-        </div>
-
-        <div className="bg-dark bg-color-5">
-          <div className="u-pv++ text-center">
-            <h1>React + JSPM Boilerplate</h1>
-            <p>An Open Source Project to Kickstart your next React & Redux App</p>
-            <a className="btn" href="https://github.com/Points/react-jspm-boilerplate" target="_blank">
-              <i className="icon-new-tab"></i> Go to the Repo
-            </a>
-          </div>
-        </div>
-
-        <div className="bg-dark bg-color-3">
-          <div className="u-pv++ text-center">
-            <h1>Travlr</h1>
-            <p>Collaborative travel planning made easy</p>
-            <a className="btn" href="http://www.thetravlr.com" target="_blank">
-              <i className="icon-new-tab"></i> Launch App
-            </a>
-          </div>
-        </div>
+        {this.renderPersonalProjects()}
       </div>
-
-      <div className="footer">
-        <div className="text-center">
-          Thanks for visiting my site. made with love in Seattle, WA <br /> if you're interested in working with me feel free to send me an <a className="color-3" href="mailto:ryanirilli@gmail.com">email</a>
-        </div>
-      </div>
-
+      {this.renderFooter()}
     </div>
   },
 
@@ -72,20 +28,7 @@ export const App = React.createClass({
           <p className="text-italic u-ph">
             Interaction Developer, Front End Engineer, Visual Designer
           </p>
-          <ul className="list-bare list-inline links-no-underline medium-icons color-4 u-mb-">
-            <li>
-              <a href="https://github.com/ryanirilli" className="icon-github u-ph-"></a>
-            </li>
-            <li>
-              <a href="https://medium.com/@ryanirilli" className="icon-medium u-ph-"></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/ryanirilli" className="icon-twitter u-ph-"></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/ryanirilli" className="icon-linkedin u-ph-"></a>
-            </li>
-          </ul>
+          {this.renderSocialLinks()}
           <a className="color-2 links-no-underline link-with-icon"
              href="https://dl.dropboxusercontent.com/u/7119407/Ryan-Irilli-Resume.pdf"
              target="_blank">
@@ -94,6 +37,23 @@ export const App = React.createClass({
         </div>
       </div>
     </div>
+  },
+  
+  renderSocialLinks() {
+    return <ul className="list-bare list-inline links-no-underline medium-icons color-4 u-mb-">
+      <li>
+        <a href="https://github.com/ryanirilli" className="icon-github u-ph-"></a>
+      </li>
+      <li>
+        <a href="https://medium.com/@ryanirilli" className="icon-medium u-ph-"></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/ryanirilli" className="icon-twitter u-ph-"></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/ryanirilli" className="icon-linkedin u-ph-"></a>
+      </li>
+    </ul>
   },
 
   renderIntroSection() {
@@ -122,7 +82,6 @@ export const App = React.createClass({
             </div>
           </div>
         </div>
-
         {this.renderCompleteTools()}
       </div>
     </div>
@@ -132,7 +91,7 @@ export const App = React.createClass({
     return <div className="u-pt+">
       <div className="section u-pt+">
         <div className="layout">
-          <div className="layout__item u-1/3 u-1/1-palm">
+          <div className="layout__item u-1/3 u-1/1-palm u-mb">
             <div className="text-center palm-ph">
               <img src="/static/img/js-logo.svg" className="u-100px" />
               <p>
@@ -141,7 +100,7 @@ export const App = React.createClass({
               </p>
             </div>
           </div>
-          <div className="layout__item u-1/3 u-1/1-palm">
+          <div className="layout__item u-1/3 u-1/1-palm u-mb">
             <div className="text-center palm-ph">
               <img src="/static/img/sass-logo.svg" className="u-75px" />
               <p>
@@ -150,7 +109,7 @@ export const App = React.createClass({
               </p>
             </div>
           </div>
-          <div className="layout__item u-1/3 u-1/1-palm">
+          <div className="layout__item u-1/3 u-1/1-palm u-mb">
             <div className="text-center palm-ph">
               <img src="/static/img/gulp-grunt-logos.png" className="u-100px" />
               <p>
@@ -159,27 +118,27 @@ export const App = React.createClass({
               </p>
             </div>
           </div>
-          <div className="layout__item u-1/3 u-1/1-palm">
+          <div className="layout__item u-1/3 u-1/1-palm u-mb">
             <div className="text-center palm-ph">
-              <img src="/static/img/photoshop-logo.svg" className="u-100px" />
+              <img src="/static/img/photoshop-logo.svg" className="u-50px" />
               <p>
                 Where would any designer be without Photoshop. Flows, quick and dirty mockups, right down to pixel perfection.
                 It is the de facto software I use to pump out graphics and all types of visual bliss.
               </p>
             </div>
           </div>
-          <div className="layout__item u-1/3 u-1/1-palm">
+          <div className="layout__item u-1/3 u-1/1-palm u-mb">
             <div className="text-center palm-ph">
-              <img src="/static/img/illustrator-logo.svg" className="u-100px" />
+              <img src="/static/img/illustrator-logo.svg" className="u-50px" />
               <p>
                 Illustrator, my vector based counterpart for when you need a scalable graphic including logos, icons and
                 animatable assets. Or when you want to trace Kanye West.
               </p>
             </div>
           </div>
-          <div className="layout__item u-1/3 u-1/1-palm">
+          <div className="layout__item u-1/3 u-1/1-palm u-mb">
             <div className="text-center palm-ph">
-              <img src="/static/img/after-effects-logo.svg" className="u-100px" />
+              <img src="/static/img/after-effects-logo.svg" className="u-50px" />
               <p>
                 After Effects is a motion graphics tool and can be handy in many ways. I use it to create animated product videos,
                 interesting interactions, or experiments in motion bringing UX to life without all the nonsense  of writing code.
@@ -189,6 +148,46 @@ export const App = React.createClass({
         </div>
       </div>
     </div>
+  },
+
+  renderPersonalProjects() {
+    return <section>
+      <div className="bg-dark bg-color-4">
+        <div className="banner">
+          <div className="banner__content">
+            Personal Projects
+          </div>
+        </div>
+
+        <div className="u-pv++ text-center">
+          <h1>Visaudio</h1>
+          <p>Play all your Facebook photos to the beat of music</p>
+          <a className="btn" href="http://visaudio.me/" target="_blank">
+            <i className="icon-new-tab"></i> Launch App
+          </a>
+        </div>
+      </div>
+
+      <div className="bg-dark bg-color-5">
+        <div className="u-pv++ text-center">
+          <h1>React + JSPM Boilerplate</h1>
+          <p>An Open Source Project to Kickstart your next React & Redux App</p>
+          <a className="btn" href="https://github.com/Points/react-jspm-boilerplate" target="_blank">
+            <i className="icon-new-tab"></i> Go to the Repo
+          </a>
+        </div>
+      </div>
+
+      <div className="bg-dark bg-color-3">
+        <div className="u-pv++ text-center">
+          <h1>Travlr</h1>
+          <p>Collaborative travel planning made easy</p>
+          <a className="btn" href="http://www.thetravlr.com" target="_blank">
+            <i className="icon-new-tab"></i> Launch App
+          </a>
+        </div>
+      </div>
+    </section>
   },
 
   renderDottedLine(width = '100px') {
@@ -211,6 +210,14 @@ export const App = React.createClass({
       <i className="icon-display" style={{fontSize: '100px'}}></i>
       <i className="icon-phone" style={{fontSize: '50px'}}></i>
     </div>
+  },
+
+  renderFooter() {
+    return <footer className="footer u-ph">
+      <div className="text-center">
+        Thanks for visiting my site. made with <i className="icon-heart"></i> in Seattle, WA <br /> if you're interested in working with me feel free to send me an <a className="color-3" href="mailto:ryanirilli@gmail.com">email</a>
+      </div>
+    </footer>
   }
 });
 
