@@ -161,7 +161,7 @@ export const App = React.createClass({
 
         <div className="u-pv++ text-center">
           <h1>Visaudio</h1>
-          <p>Play all your Facebook photos to the beat of music</p>
+          <p className="u-ph">Play all your Facebook photos to the beat of music</p>
           <a className="btn" href="http://visaudio.me/" target="_blank">
             <i className="icon-new-tab"></i> Launch App
           </a>
@@ -171,7 +171,7 @@ export const App = React.createClass({
       <div className="bg-dark bg-color-5">
         <div className="u-pv++ text-center">
           <h1>React + JSPM Boilerplate</h1>
-          <p>An Open Source Project to Kickstart your next React & Redux App</p>
+          <p className="u-ph">An Open Source Project to Kickstart your next React & Redux App</p>
           <a className="btn" href="https://github.com/Points/react-jspm-boilerplate" target="_blank">
             <i className="icon-new-tab"></i> Go to the Repo
           </a>
@@ -181,7 +181,7 @@ export const App = React.createClass({
       <div className="bg-dark bg-color-3">
         <div className="u-pv++ text-center">
           <h1>Travlr</h1>
-          <p>Collaborative travel planning made easy</p>
+          <p className="u-ph">Collaborative travel planning made easy</p>
           <a className="btn" href="http://www.thetravlr.com" target="_blank">
             <i className="icon-new-tab"></i> Launch App
           </a>
