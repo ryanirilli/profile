@@ -30,7 +30,7 @@ export const App = React.createClass({
           </p>
           {this.renderSocialLinks()}
           <a className="color-2 links-no-underline link-with-icon"
-             href="https://dl.dropboxusercontent.com/u/7119407/Ryan-Irilli-Resume.pdf"
+             href="https://dl.dropboxusercontent.com/u/7119407/Ryan-Irilli-resume.pdf"
              target="_blank">
             <i className="icon-cloud-download"></i> resume
           </a>
