@@ -173,8 +173,15 @@ export const App = React.createClass({
         <div className="u-pv++ text-center">
           <h1>React + JSPM Boilerplate</h1>
           <p className="u-ph">An Open Source Project to Kickstart your next React & Redux App</p>
-          <a className="btn" href="https://github.com/Points/react-jspm-boilerplate" target="_blank">
+          <a className="btn u-mr-"
+             href="https://github.com/Points/react-jspm-boilerplate"
+             target="_blank">
             <i className="icon-new-tab"></i> Go to the Repo
+          </a>
+          <a className="btn"
+             href="https://medium.com/@ryanirilli/a-simple-react-redux-starter-kit-7f419a263fd2#.bwu900i60"
+             target="_blank">
+            <i className="icon-medium"></i> Read The Post
           </a>
         </div>
       </div>
