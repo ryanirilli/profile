@@ -17,7 +17,7 @@ export const App = React.createClass({
   },
 
   renderHeader() {
-    return <div className="bg-dark bg-color-1">
+    return <header className="bg-dark bg-color-1">
       <div className="section u-pv++">
         <div className="text-center">
           <div className="circle-img circle-img--bordered">
@@ -37,7 +37,7 @@ export const App = React.createClass({
           </a>
         </div>
       </div>
-    </div>
+    </header>
   },
   
   renderSocialLinks() {
@@ -58,7 +58,7 @@ export const App = React.createClass({
   },
 
   renderIntroSection() {
-    return <div className="bg-white">
+    return <section className="bg-white">
       <div className="text-center u-pv++ palm-pv">
         <h2 className="u-mb+ u-ph">
           I build <span className="color-4">great</span> web apps using modern tools
@@ -85,11 +85,11 @@ export const App = React.createClass({
         </div>
         {this.renderCompleteTools()}
       </div>
-    </div>
+    </section>
   },
 
   renderCompleteTools() {
-    return <div className="u-pt+">
+    return <section className="u-pt+">
       <div className="section u-pt+">
         <div className="layout">
           <div className="layout__item u-1/3 u-1/1-palm u-mb">
@@ -148,7 +148,7 @@ export const App = React.createClass({
           </div>
         </div>
       </div>
-    </div>
+    </section>
   },
 
   renderPersonalProjects() {
@@ -214,13 +214,13 @@ export const App = React.createClass({
   },
 
   renderDesignWork() {
-    return <div className="bg-white u-pv++">
+    return <section className="bg-white u-pv++">
       <div className="text-center u-ph">
         <h2>Unsullied Logo Design</h2>
         <p>A custom logo for our <a href="https://github.com/the-unsullied" target="_blank">Unsullied React Components</a> Repo</p>
         <img className="u-300px" src="/static/img/unsullied-logo.svg"/>
       </div>
-    </div>
+    </section>
   },
 
   renderFooter() {
