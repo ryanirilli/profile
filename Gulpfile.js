@@ -106,7 +106,7 @@ function compileSass() {
     }
 
     stream.pipe(gulp.dest(cssDir))
-    .on('end', resolve);
+      .on('end', resolve);
   });
 }
 
@@ -210,12 +210,10 @@ function startServer() {
 }
 
 function watch() {
-  gulp.watch('./src/styles/**/*.scss', () => {
-    compileSass()
-      .then(() => {
-        gulp.src(`${buildDir}/**/*.css`)
-          .pipe(connect.reload());
-      });
+  const cssBuildPath = `${buildDir}/**/*.css`;
+  gulp.watch('./src/styles/**/*.scss', compileSass);
+  gulp.watch(cssBuildPath, () => {
+    gulp.src(cssBuildPath).pipe(connect.reload());
   });
 
   gulp.watch([

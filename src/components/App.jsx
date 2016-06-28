@@ -10,6 +10,7 @@ export const App = React.createClass({
         {this.renderHeader()}
         {this.renderIntroSection()}
         {this.renderPersonalProjects()}
+        {this.renderDesignWork() }
       </div>
       {this.renderFooter()}
     </div>
@@ -209,6 +210,16 @@ export const App = React.createClass({
     return <div className="ib">
       <i className="icon-display" style={{fontSize: '100px'}}></i>
       <i className="icon-phone" style={{fontSize: '50px'}}></i>
+    </div>
+  },
+
+  renderDesignWork() {
+    return <div className="bg-white u-pv++">
+      <div className="text-center u-ph">
+        <h2>Unsullied Logo Design</h2>
+        <p>A custom logo for our <a href="https://github.com/the-unsullied" target="_blank">Unsullied React Components</a> Repo</p>
+        <img className="u-300px" src="/static/img/unsullied-logo.svg"/>
+      </div>
     </div>
   },
 
