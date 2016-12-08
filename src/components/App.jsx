@@ -17,17 +17,17 @@ export const App = React.createClass({
   },
 
   renderHeader() {
-    return <header className="bg-dark bg-color-1">
-      <div className="section u-pv++">
+    return <header className="bg-dark bg-color-1 page bg-clouds fade-in--main">
+      <div className="section u-pv++ scale-up--main">
         <div className="text-center">
-          <div className="circle-img circle-img--bordered">
+          <div className="circle-img circle-img--bordered shadow">
             <img className="circle-img__img" src="/static/img/me.jpg" />
           </div>
-          <h1 className="text-shadow u-mt-">
-            Hi. I'm Ryan
+          <h1 className="text-shadow u-mt- text-inset--dark">
+            Hi, I'm Ryan
           </h1>
           <p className="text-italic u-ph">
-            Interaction Developer, Front End Engineer, Visual Designer
+            Front End Engineer / Web Designer / UX Developer
           </p>
           {this.renderSocialLinks()}
           <a className="color-2 links-no-underline link-with-icon"
@@ -58,108 +58,34 @@ export const App = React.createClass({
   },
 
   renderIntroSection() {
-    return <section className="bg-white">
-      <div className="text-center u-pv++ palm-pv">
-        <h2 className="u-mb+ u-ph">
-          I build <span className="color-4">great</span> web apps using modern tools
-        </h2>
-        <div className="section">
-          <div className="layout">
-            <div className="layout__item u-1/5 u-1/1-palm">
-              <i className="icon-data" style={{fontSize: '100px'}}></i>
-            </div>
-            <div className="layout__item u-1/5 u-1/1-palm">
-              {this.renderDottedLine()}
-            </div>
-            <div className="layout__item u-1/5 u-1/1-palm">
-              <img src="/static/img/redux-logo.svg" className="u-75px" />
-              <img src="/static/img/react-logo.svg" className="u-75px" />
-            </div>
-            <div className="layout__item u-1/5 u-1/1-palm">
-              {this.renderDottedLine()}
-            </div>
-            <div className="layout__item u-1/5 u-1/1-palm">
-              {this.renderDeviceIcons()}
-            </div>
-          </div>
-        </div>
-        {this.renderCompleteTools()}
-      </div>
-    </section>
-  },
-
-  renderCompleteTools() {
-    return <section className="u-pt+">
-      <div className="section u-pt+">
-        <div className="layout">
-          <div className="layout__item u-1/3 u-1/1-palm u-mb">
-            <div className="text-center palm-ph">
-              <img src="/static/img/js-logo.svg" className="u-100px" />
-              <p>
-                Javascript, the Jon Snow of programming, I have come to love it and all the power it affords me when
-                making bad ass UI. It is my central skill set and I am continually learning how to use it better.
-              </p>
-            </div>
-          </div>
-          <div className="layout__item u-1/3 u-1/1-palm u-mb">
-            <div className="text-center palm-ph">
-              <img src="/static/img/sass-logo.svg" className="u-75px" />
-              <p>
-                My css pre-processor of choice. It enables me to write css that doesn't suck. Coupled with concepts of
-                OOCSS and the Inverted Triangle Architecture, my css stays lean, reusable, and easy to use.
-              </p>
-            </div>
-          </div>
-          <div className="layout__item u-1/3 u-1/1-palm u-mb">
-            <div className="text-center palm-ph">
-              <img src="/static/img/gulp-grunt-logos.png" className="u-100px" />
-              <p>
-                Build tools! with all due respect to npm scripts, tools like these and their ecosystem of plugins
-                make it so that I can develop, transpile, bundle my code and deliver it to you fine folks with ease.
-              </p>
-            </div>
-          </div>
-          <div className="layout__item u-1/3 u-1/1-palm u-mb">
-            <div className="text-center palm-ph">
-              <img src="/static/img/photoshop-logo.svg" className="u-50px" />
-              <p>
-                Where would any designer be without Photoshop. Flows, quick and dirty mockups, right down to pixel perfection.
-                It is the de facto software I use to pump out graphics and all types of visual bliss.
-              </p>
-            </div>
-          </div>
-          <div className="layout__item u-1/3 u-1/1-palm u-mb">
-            <div className="text-center palm-ph">
-              <img src="/static/img/illustrator-logo.svg" className="u-50px" />
-              <p>
-                Illustrator, my vector based counterpart for when you need a scalable graphic including logos, icons and
-                animatable assets. Or when you want to trace Kanye West.
-              </p>
-            </div>
-          </div>
-          <div className="layout__item u-1/3 u-1/1-palm u-mb">
-            <div className="text-center palm-ph">
-              <img src="/static/img/after-effects-logo.svg" className="u-50px" />
-              <p>
-                After Effects is a motion graphics tool and can be handy in many ways. I use it to create animated product videos,
-                interesting interactions, or experiments in motion bringing UX to life without all the nonsense  of writing code.
-              </p>
-            </div>
-          </div>
-        </div>
+    return <section className="bg-white border-serrated-ends">
+      <div className="text-center u-pv++ palm-pv section section--small section--small">
+        <p className="text-dark-semi-transparent u-ph palm-ph+ palm-pv+">
+          <span className="text-first-letter">I</span> am a career web app developer with 8 years experience working from start ups to large companies
+          in both design and engineering roles. My work spans from graphic design to implementation to production builds
+          and I care a great deal about building high quality and maintainable products over time for any device.
+        </p>
       </div>
     </section>
   },
 
   renderPersonalProjects() {
     return <section>
-      <div className="bg-dark bg-color-4">
-        <div className="banner">
-          <div className="banner__content">
-            Personal Projects
-          </div>
+      <div className="bg-dark bg-color-2">
+        <div className="text-center">
+          <img className="pull-up" src="/static/img/spotworm-main.png" />
         </div>
+        <div className="u-pv++ text-center">
+          <h1>Spotworm</h1>
+          <p className="u-ph">A better music discovery app</p>
+          <a className="btn" href="http://spotworm.com" target="_blank">
+            <i className="icon-new-tab"></i> Launch It
+          </a>
+        </div>
+      </div>
 
+
+      <div className="bg-dark bg-color-4">
         <div className="u-pv++ text-center">
           <h1>Visaudio</h1>
           <p className="u-ph">Play all your Facebook photos to the beat of music</p>

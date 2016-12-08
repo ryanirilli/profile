@@ -9,3 +9,31 @@
 .text-shadow {
   text-shadow: 0 0 3px rgba(black,0.3);
 }
+
+.text-inset--dark {
+  color: rgba(0,0,0,0.4);
+  text-shadow: 1px 1px rgba(255,255,255,0.1);
+}
+
+.text-dark-semi-transparent {
+  color: rgba(black, 0.48);
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.text-first-letter {
+  font-size: 48px;
+  font-weight: 800;
+  font-family: initial;
+  line-height: 0;
+  position: relative;
+  top: -6px;
+  padding: 0 18px;
+  border-radius: 30px;
+  height: 0;
+  background: rgba(0, 0, 0, 0.09);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.39);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}

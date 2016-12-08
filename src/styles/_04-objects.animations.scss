@@ -6,8 +6,29 @@
   @include animation('stroke-animation 30s infinite');
   @include vendor(animation-timing-function, linear);
 }
+
 @include keyframes(stroke-animation) {
   0%   { stroke-dashoffset: 0;     }
   100% { stroke-dashoffset: -2000px; }
 }
 
+.scale-up--main {
+  opacity: 0;
+  @include vendor(transform, scale(0.95));
+  @include animation('fade-in 300ms forwards, scale-up 1s forwards');
+}
+
+@include keyframes(scale-up) {
+  0% {@include vendor(transform, scale(0.95));}
+  100% {@include vendor(transform, scale(1));}
+}
+
+.fade-in--main {
+  opacity: 0;
+  @include animation('fade-in 1s forwards');
+}
+
+@include keyframes(fade-in) {
+  0%   { opacity: 0;     }
+  100% { opacity: 1; }
+}

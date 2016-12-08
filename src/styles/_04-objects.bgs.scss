@@ -4,7 +4,7 @@
 }
 
 .bg-white {
-  background-color: white;
+  background-color: #FFFAD5;
   color: #333;
 }
 
@@ -25,13 +25,64 @@
   background-position-y: 0;
 }
 
-$bgColors: #2C3E50, #E74C3C, #ECF0F1, #3498DB, #2980B9;
+.bg-clouds {
+  position: relative;
+  background-image: url('/static/img/home-bg-main.png');
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 900px 180px;
+  background-attachment: fixed;
+  &:after,
+  &:before {
+    content: '';
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+  }
+  &:after {
+    left: 0;
+    background: url('/static/img/home-bg-left-01.svg') bottom left;
+  }
+  &:before {
+    right: 0;
+    background: url('/static/img/home-bg-right-01.svg') bottom left;
+  }
+}
+
+.bg-texture--sos {
+  background-image: url('/static/img/sos.png');
+}
+
+.border-serrated-ends {
+  position: relative;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    background-repeat: repeat-x;
+  }
+  &:before {
+    bottom: -15px;
+    background-image: url('/static/img/serrated-bottom.svg');
+  }
+  &:after {
+    top: -15px;
+    background-image: url('/static/img/serrated-top.svg');
+  }
+}
+
+$yellow: #FFD34E;
+
+$bgColors: #124858, #BD4932, #ECF0F1, $yellow, #2980B9;
 $colors: #FFFFFF, #FFFFFF, #2980B9, #FFFFFF, #FFFFFF;
 $btnBgColors: #2C3E50, #2C3E50, #2C3E50, #FFFFFF, #2C3E50;
 $btnColors: #FFFFFF, #FFFFFF, #FFFFFF, #3498DB, #FFFFFF;
-
-
-
 @for $i from 1 through length($bgColors) {
   $bgColor: nth($bgColors, $i);
   $color: nth($colors, $i);

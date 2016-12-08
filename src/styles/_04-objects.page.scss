@@ -1,11 +1,10 @@
 .app-container {
-  max-width: 1425px;
   margin: 0 auto;
   overflow: hidden;
 }
 
 .page {
-  min-height: 75vh;
+  min-height: 100vh;
 }
 
 .section {
@@ -15,4 +14,8 @@
   @include media-query(palm) {
     width: 100%;
   }
+}
+
+.section--small {
+  max-width: 500px;
 }
