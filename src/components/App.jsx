@@ -26,11 +26,11 @@ export const App = React.createClass({
           <h1 className="text-shadow u-mt- text-inset--dark">
             Hi, I'm Ryan
           </h1>
-          <p className="text-italic u-ph">
-            Front End Engineer / Web Designer / UX Developer
+          <p className="u-ph">
+            Front End Engineer / Web & Motion Designer
           </p>
           {this.renderSocialLinks()}
-          <a className="color-2 links-no-underline link-with-icon"
+          <a className="color-2 links-no-underline link-with-icon "
              href="https://dl.dropboxusercontent.com/u/7119407/Ryan-Irilli-resume.pdf"
              target="_blank">
             <i className="icon-cloud-download"></i> resume
@@ -42,16 +42,16 @@ export const App = React.createClass({
 
   renderSocialLinks() {
     return <ul className="list-bare list-inline links-no-underline medium-icons color-4 u-mb-">
-      <li>
+      <li className="fx-grow-on-hover">
         <a href="https://github.com/ryanirilli" className="icon-github u-ph-"></a>
       </li>
-      <li>
+      <li className="fx-grow-on-hover">
         <a href="https://medium.com/@ryanirilli" className="icon-medium u-ph-"></a>
       </li>
-      <li>
+      <li className="fx-grow-on-hover">
         <a href="https://twitter.com/ryanirilli" className="icon-twitter u-ph-"></a>
       </li>
-      <li>
+      <li className="fx-grow-on-hover">
         <a href="https://www.linkedin.com/in/ryanirilli" className="icon-linkedin u-ph-"></a>
       </li>
     </ul>
@@ -76,22 +76,26 @@ export const App = React.createClass({
           <img className="pull-up" src="/static/img/spotworm-main.png" />
         </div>
         <div className="u-pB++ text-center">
-          <h1>Spotworm</h1>
-          <p className="u-ph">A better music discovery app</p>
-          <div className="section">
+          <h1 className="u-mt0">
+            Spotworm
+          </h1>
+          <p className="u-ph">
+            A better music discovery app
+          </p>
+          <div className="section u-ph">
             <div className="layout layout--center">
-              <div className="layout__item u-1/2">
+              <div className="layout__item u-1/2 u-1/1-palm">
                 <p>
-                  Spotworm is an app built for modern music nerds on the hunt for the best new tunes. It uses the power
+                  My latest project, Spotworm, is built for modern music nerds on the hunt for the best new tunes. It uses the power
                   of the Spotify API to let you search by artist, and gives you a list of tracks you might like. You can
                   instantly sample tracks by hovering on your laptop, or tapping on mobile device and easily
                   swipe through hundreds of tracks. When you find your jam, simply add it to a playlist and keep on browsing.
                 </p>
               </div>
-              <div className="layout__item u-1/2">
+              <div className="layout__item u-1/2 u-1/1-palm">
                 <p>
                   This project explores the technical design decisions that need to be addressed when building
-                  a mobile and desktop based application where the user experience went beyond using simple css media queries. By
+                  a mobile and desktop application, where the user experience requires more than just css media queries. By
                   syncing the css breakpoints with javascript and using React and Redux, I am able to leverage shared code
                   while also creating specific user experiences for each context.
                 </p>
@@ -181,7 +185,7 @@ export const App = React.createClass({
   renderFooter() {
     return <footer className="footer u-ph">
       <div className="text-center">
-        Thanks for visiting my site. made with <i className="icon-heart"></i> in Seattle, WA <br /> if you're interested in working with me feel free to send me an <a className="color-3" href="mailto:ryanirilli@gmail.com">email</a>
+        Thanks for visiting! made with <i className="icon-heart"></i> in Seattle, WA <br /> if you're interested in working with me feel free to send me an <a className="color-3" href="mailto:ryanirilli@gmail.com">email</a>
       </div>
     </footer>
   }
