@@ -39,7 +39,7 @@ export const App = React.createClass({
       </div>
     </header>
   },
-  
+
   renderSocialLinks() {
     return <ul className="list-bare list-inline links-no-underline medium-icons color-4 u-mb-">
       <li>
@@ -58,7 +58,7 @@ export const App = React.createClass({
   },
 
   renderIntroSection() {
-    return <section className="bg-white border-serrated-ends">
+    return <section className="bg-color-4 border-serrated-ends">
       <div className="text-center u-pv++ palm-pv section section--small section--small">
         <p className="text-dark-semi-transparent u-ph palm-ph+ palm-pv+">
           <span className="text-first-letter">I</span> am a career web app developer with 8 years experience working from start ups to large companies
@@ -71,16 +71,38 @@ export const App = React.createClass({
 
   renderPersonalProjects() {
     return <section>
-      <div className="bg-dark bg-color-2">
+      <div className="bg-white">
         <div className="text-center">
           <img className="pull-up" src="/static/img/spotworm-main.png" />
         </div>
-        <div className="u-pv++ text-center">
+        <div className="u-pB++ text-center">
           <h1>Spotworm</h1>
           <p className="u-ph">A better music discovery app</p>
-          <a className="btn" href="http://spotworm.com" target="_blank">
-            <i className="icon-new-tab"></i> Launch It
-          </a>
+          <div className="section">
+            <div className="layout layout--center">
+              <div className="layout__item u-1/2">
+                <p>
+                  Spotworm is an app built for modern music nerds on the hunt for the best new tunes. It uses the power
+                  of the Spotify API to let you search by artist, and gives you a list of tracks you might like. You can
+                  instantly sample tracks by hovering on your laptop, or tapping on mobile device and easily
+                  swipe through hundreds of tracks. When you find your jam, simply add it to a playlist and keep on browsing.
+                </p>
+              </div>
+              <div className="layout__item u-1/2">
+                <p>
+                  This project explores the technical design decisions that need to be addressed when building
+                  a mobile and desktop based application where the user experience went beyond using simple css media queries. By
+                  syncing the css breakpoints with javascript and using React and Redux, I am able to leverage shared code
+                  while also creating specific user experiences for each context.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="u-pb+ u-pt">
+            <a className="btn" href="http://spotworm.com" target="_blank">
+              <i className="icon-new-tab"></i> Launch It
+            </a>
+          </div>
         </div>
       </div>
 
@@ -126,7 +148,7 @@ export const App = React.createClass({
 
   renderDottedLine(width = '100px') {
     return <svg width={width} height="35px" viewBox="0 0 300 1" className="rotate-vertical-palm homepage-dotted-line">
-      <line className="stroke-animation" 
+      <line className="stroke-animation"
             x1="10"
             x2="300"
             y1="0"
