@@ -7,4 +7,14 @@
   @include media-query(palm) {
     margin-top: 0;
   }
+  position: relative;
+  &:after {
+    top: -15px;
+    background-image: url('/static/img/serrated-top-grey.svg');
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    background-repeat: repeat-x;
+  }
 }

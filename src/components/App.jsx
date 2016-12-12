@@ -75,7 +75,7 @@ export const App = React.createClass({
         <div className="text-center">
           <img className="pull-up" src="/static/img/spotworm-main.png" />
         </div>
-        <div className="u-pB++ text-center">
+        <div className="text-center">
           <h1 className="u-mt0">
             Spotworm
           </h1>
@@ -110,14 +110,86 @@ export const App = React.createClass({
         </div>
       </div>
 
+      <div>
+        <div className="section u-pv++">
+          <div className="text-center">
+            <h1 className="u-mt0">
+              Metropolis
+            </h1>
+            <p className="u-ph">
+              Logo Design and Team Branding
+            </p>
+          </div>
 
-      <div className="bg-dark bg-color-4">
-        <div className="u-pv++ text-center">
-          <h1>Visaudio</h1>
-          <p className="u-ph">Play all your Facebook photos to the beat of music</p>
-          <a className="btn" href="http://visaudio.me/" target="_blank">
-            <i className="icon-new-tab"></i> Launch App
-          </a>
+          <div className="layout layout--center">
+            <div className="layout__item u-1/2 u-1/1-palm">
+              <p>
+                I work at Uber on a team called Metropolis. We aim to help cities use our data to help inform decision making
+                in urban planning and development. We're a group of rock solid engineers tackling some really difficult challenges.
+                My role is mostly in the front end architecture and managing the user experience, so I primarily work on
+                the implementation side of things.
+              </p>
+            </div>
+            <div className="layout__item u-1/2 u-1/1-palm">
+              <p>
+                I was asked to come up with a logo for our team to represent our work and mission. A family crest seemed most
+                appropriate here seeing how tightly knit we were with one another. The subtle hexagon pattern represents the various
+                zones we bucket neighborhoods in, and of course the iconic Space Needle to let the larger Uber groups know about
+                the quality of work coming straight outta the Pacific Northwest.
+              </p>
+            </div>
+          </div>
+
+          <div className="layout layout--center u-pt+">
+            <div className="layout__item u-1/4 u-1/2-palm">
+              <div className="u-p">
+                <img className="u-1/1" src="/static/img/metropolis-logo/on-white.svg"/>
+              </div>
+            </div>
+            <div className="layout__item u-1/4 u-1/2-palm">
+              <div className="u-p bg-black">
+                <img className="u-1/1" src="/static/img/metropolis-logo/on-black.svg"/>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div>
+        <div className="section u-pv++">
+          <div className="text-center">
+            <h1 className="u-mt0">
+              Visaudio
+            </h1>
+            <p className="u-ph">
+              Play your Facebook photos to the beat of music
+            </p>
+          </div>
+
+          <div className="layout layout--center">
+            <div className="layout__item u-1/2 u-1/1-palm">
+              <p>
+                Visaudio is an experiment with the Web Audio API. It uses audio frequency to control the rate of a photo
+                slideshow. The essential logic behind it is to average out the frequency value at a given sample, and compare
+                it to the previous one. If the difference between them exceeds a threshold, it advances the photo
+              </p>
+            </div>
+            <div className="layout__item u-1/2 u-1/1-palm">
+              <p>
+                This gives some really interesting results and has potential to create some beautiful slideshows. I collaborated
+                on this project with another developer, Bradley Schoch, and we submitted it to the Dolby Web Audio contest. Though
+                we did not win, the types of challenges we discovered was very satisfying and the collaboration was a great experience.
+              </p>
+            </div>
+          </div>
+
+          <div className="u-pb+ u-pt text-center">
+            <a className="btn" href="http://visaudio.me" target="_blank">
+              <i className="icon-new-tab"></i> Launch It
+            </a>
+          </div>
+
         </div>
       </div>
 
