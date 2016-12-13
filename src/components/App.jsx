@@ -102,7 +102,7 @@ export const App = React.createClass({
               </div>
             </div>
           </div>
-          <div className="u-pb+ u-pt">
+          <div className="u-pb+ palm-pb0 u-pt">
             <a className="btn" href="http://spotworm.com" target="_blank">
               <i className="icon-new-tab"></i> Launch It
             </a>
@@ -111,7 +111,7 @@ export const App = React.createClass({
       </div>
 
       <div>
-        <div className="section u-pv++">
+        <div className="section u-pv++ u-ph palm-pt+">
           <div className="text-center">
             <h1 className="u-mt0">
               Metropolis
@@ -152,12 +152,11 @@ export const App = React.createClass({
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
       <div>
-        <div className="section u-pv++">
+        <div className="section u-pv++ u-ph palm-pt0">
           <div className="text-center">
             <h1 className="u-mt0">
               Visaudio
