@@ -14,7 +14,22 @@
 }
 
 .bg-blue {
-  background: #004358;
+  background: #287fd0;
+  color: white;
+  .btn {
+    border-color: white;
+    background: transparent;
+    &:hover {
+      background: rgba(0, 0, 0, 0.08);
+    }
+  }
+  .btn--secondary {
+    background: #3a93e6;
+    border-color: #3a93e6;
+    &:hover {
+      background: rgba(58, 147, 230, 0.58);
+    }
+  }
 }
 
 .bg-green {
@@ -46,6 +61,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.2;
+    z-index: -1;
   }
   &:after {
     left: 0;
@@ -87,6 +103,7 @@ $bgColors: #124858, #BD4932, #ECF0F1, $yellow, #2980B9;
 $colors: #FFFFFF, #FFFFFF, #2980B9, #FFFFFF, #FFFFFF;
 $btnBgColors: #2C3E50, #2C3E50, #2C3E50, #FFFFFF, #2C3E50;
 $btnColors: #FFFFFF, #FFFFFF, #FFFFFF, #3498DB, #FFFFFF;
+
 @for $i from 1 through length($bgColors) {
   $bgColor: nth($bgColors, $i);
   $color: nth($colors, $i);
@@ -100,14 +117,11 @@ $btnColors: #FFFFFF, #FFFFFF, #FFFFFF, #3498DB, #FFFFFF;
       background-color: $bgColor;
       color: $color;
     }
-    .btn {
-      background-color: $btnBgColor;
-      color: $btnColor;
-      border-color: $btnBgColor;
-      &:hover, &:focus {
-        background-color: $btnColor;
-        color: $btnBgColor;
-      }
-    }
   }
 }
+
+.btn--secondary {
+  background: #1483a9;
+  border-color: #1483a9;
+}
+

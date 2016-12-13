@@ -27,7 +27,7 @@ export const App = React.createClass({
             Hi, I'm Ryan
           </h1>
           <p className="u-ph">
-            Front End Engineer / Web & Motion Designer
+            Front End Engineer / Web Designer
           </p>
           {this.renderSocialLinks()}
           <a className="color-2 links-no-underline link-with-icon "
@@ -156,7 +156,7 @@ export const App = React.createClass({
       </div>
 
       <div>
-        <div className="section u-pv++ u-ph palm-pt0">
+        <div className="section u-pt u-pb++ u-ph palm-pt0">
           <div className="text-center">
             <h1 className="u-mt0">
               Visaudio
@@ -192,16 +192,18 @@ export const App = React.createClass({
         </div>
       </div>
 
-      <div className="bg-dark bg-color-5">
-        <div className="u-pv++ text-center">
-          <h1>React + JSPM Boilerplate</h1>
+      <div className="bg-blue">
+        <div className="u-pv++ palm-pb0 text-center palm-pt+">
+          <h1 className="u-mt0">
+            React + JSPM Boilerplate
+          </h1>
           <p className="u-ph">An Open Source Project to Kickstart your next React & Redux App</p>
-          <a className="btn u-mr-"
+          <a className="btn u-mr- palm-mr0 u-1/1-palm"
              href="https://github.com/Points/react-jspm-boilerplate"
              target="_blank">
-            <i className="icon-new-tab"></i> Go to the Repo
+            <i className="icon-github"></i> Go to the Repo
           </a>
-          <a className="btn"
+          <a className="btn btn--secondary u-1/1-palm"
              href="https://medium.com/@ryanirilli/a-simple-react-redux-starter-kit-7f419a263fd2#.bwu900i60"
              target="_blank">
             <i className="icon-medium"></i> Read The Post
