@@ -49,9 +49,8 @@ export const App = React.createClass({
     return <section className="bg-color-4 border-serrated-ends">
       <div className="text-center u-pv++ palm-pv section section--small section--small">
         <p className="text-dark-semi-transparent u-ph palm-ph+ palm-pv+">
-          <span className="text-first-letter">I</span> am a career web app developer with 8 years experience working from start ups to large companies
-          in both design and engineering roles. My work spans from graphic design to implementation to production builds
-          and I care a great deal about building high quality and maintainable products over time for any device.
+          <span className="text-first-letter">I</span> have 8 years experience working from start ups to large companies
+          in both design and engineering roles. I focus in bringing high quality user experiences to the production environment.
         </p>
       </div>
     </section>
