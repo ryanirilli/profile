@@ -11,6 +11,8 @@
   overflow: auto;
   max-width: 860px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
   @include media-query(palm) {
     width: 100%;
   }

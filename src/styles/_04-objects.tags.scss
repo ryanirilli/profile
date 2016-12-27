@@ -1,0 +1,23 @@
+.tag {
+  padding: 3px 7px;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.tag-orange {
+  @extend .tag;
+  background: #e04d07;
+}
+
+.tag-blue {
+  @extend .tag;
+  background: #2d78ea;
+}
+
+.tag-yellow {
+  @extend .tag;
+  background: #f7da4d;
+  color: black
+}

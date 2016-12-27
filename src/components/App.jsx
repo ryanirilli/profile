@@ -2,6 +2,8 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
+import Intro from './Intro.jsx!';
+
 export const App = React.createClass({
 
   render() {
@@ -17,24 +19,10 @@ export const App = React.createClass({
   },
 
   renderHeader() {
-    return <header className="bg-dark bg-color-1 page bg-clouds fade-in--main">
+    return <header className="bg-dark bg-color-1 page bg-clouds">
       <div className="section u-pv++ scale-up--main">
-        <div className="text-center">
-          <div className="circle-img circle-img--bordered shadow">
-            <img className="circle-img__img" src="/static/img/me.jpg" />
-          </div>
-          <h1 className="text-shadow u-mt- text-inset--dark">
-            Hi, I'm Ryan
-          </h1>
-          <p className="u-ph">
-            Front End Engineer / Web Designer
-          </p>
-          {this.renderSocialLinks()}
-          <a className="color-2 links-no-underline link-with-icon "
-             href="https://dl.dropboxusercontent.com/u/7119407/Ryan-Irilli-resume.pdf"
-             target="_blank">
-            <i className="icon-cloud-download"></i> resume
-          </a>
+        <div className="text-center u-ph u-pt+">
+          <Intro profileImgSrc={"/static/img/me.jpg"}/>
         </div>
       </div>
     </header>
@@ -210,16 +198,6 @@ export const App = React.createClass({
           </a>
         </div>
       </div>
-
-      <div className="bg-dark bg-color-3">
-        <div className="u-pv++ text-center">
-          <h1>Travlr</h1>
-          <p className="u-ph">Collaborative travel planning made easy</p>
-          <a className="btn" href="http://www.thetravlr.com" target="_blank">
-            <i className="icon-new-tab"></i> Launch App
-          </a>
-        </div>
-      </div>
     </section>
   },
 
@@ -248,7 +226,9 @@ export const App = React.createClass({
   renderDesignWork() {
     return <section className="bg-white u-pv++">
       <div className="text-center u-ph">
-        <h2>Unsullied Logo Design</h2>
+        <h1 className="u-mt0">
+          Unsullied Logo Design
+        </h1>
         <p>A custom logo for our <a href="https://github.com/the-unsullied" target="_blank">Unsullied React Components</a> Repo</p>
         <img className="u-300px" src="/static/img/unsullied-logo.svg"/>
       </div>

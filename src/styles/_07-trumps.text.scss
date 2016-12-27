@@ -1,3 +1,7 @@
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -35,4 +39,14 @@
   height: 0;
   background: rgba(0, 0, 0, 0.09);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.39);
+}
+
+.main-title {
+  font-size: 35px;
+  font-weight: 800;
+  font-family: $heading-font;
+  line-height: 1;
+  @include media-query(palm) {
+    font-size: 25px;
+  }
 }

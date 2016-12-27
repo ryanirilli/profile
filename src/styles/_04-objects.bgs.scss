@@ -18,6 +18,9 @@
   color: white;
   .btn {
     border-color: white;
+    @include media-query(palm) {
+      border-color: transparent;
+    }
     background: transparent;
     &:hover {
       background: rgba(0, 0, 0, 0.08);
@@ -61,7 +64,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.2;
-    z-index: -1;
+    z-index: 1;
   }
   &:after {
     left: 0;
@@ -99,7 +102,7 @@
 
 $yellow: #FFD34E;
 
-$bgColors: #124858, #BD4932, #ECF0F1, $yellow, #2980B9;
+$bgColors: #15486d, #BD4932, #ECF0F1, $yellow, #2980B9;
 $colors: #FFFFFF, #FFFFFF, #2980B9, #FFFFFF, #FFFFFF;
 $btnBgColors: #2C3E50, #2C3E50, #2C3E50, #FFFFFF, #2C3E50;
 $btnColors: #FFFFFF, #FFFFFF, #FFFFFF, #3498DB, #FFFFFF;

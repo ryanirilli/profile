@@ -1,8 +1,8 @@
 @import "01-settings.inuit-buttons";
+@import "01-settings.fonts";
+@import "01-settings.inuit-media";
 @import "01-settings.inuit-spacing";
 @import "01-settings.inuit-layout";
-
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 @import "jspm:inuit-defaults/settings.defaults";
 @import "jspm:inuit-responsive-settings/settings.responsive";
@@ -19,6 +19,7 @@
 @import "03-elements";
 
 @import 'jspm:inuit-buttons/objects.buttons';
+@import 'jspm:inuit-media/objects.media';
 @import 'jspm:inuit-layout/objects.layout';
 
 @import "04-objects.animations";
@@ -30,11 +31,13 @@
 @import "04-objects.links";
 @import "04-objects.lists";
 @import "04-objects.page";
+@import "04-objects.tags";
 
 @import "05-components.drawer";
 @import "05-components.homepage";
 
-@import "jspm:inuit-spacing/_trumps.spacing";
+@import "jspm:inuit-clearfix/trumps.clearfix";
+@import "jspm:inuit-spacing/trumps.spacing";
 @import "jspm:inuit-responsive-spacing/_trumps.spacing-responsive";
 @import "jspm:inuit-widths/trumps.widths";
 @import "jspm:inuit-responsive-widths/trumps.widths-responsive";

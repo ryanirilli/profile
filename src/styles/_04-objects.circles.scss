@@ -1,7 +1,7 @@
 .circle-img {
   display: inline-block;
   overflow: hidden;
-  border-radius: 100px;
+  border-radius: 50%;
   width: 100px;
   height: 100px;
   @include media-query(palm) {
@@ -15,6 +15,6 @@
 }
 
 .circle-img__img {
-  width: 150%;
+  width: 100%;
   display: block;
 }

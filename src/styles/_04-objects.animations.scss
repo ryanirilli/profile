@@ -40,3 +40,20 @@
     @include vendor(transform, scale(1.15));
   }
 }
+
+
+.slide-from-left {
+  position: relative;
+  left: 100%;
+  @include animation(fade-in 1s forwards, slide-from-left 600ms 900ms ease forwards);
+}
+
+.fade-in-delayed {
+  opacity: 0;
+  @include animation('fade-in 1s 2s forwards');
+}
+
+@include keyframes(slide-from-left) {
+  0%   { left: 100%;     }
+  100% { left: 0; }
+}
