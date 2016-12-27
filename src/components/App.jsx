@@ -50,7 +50,7 @@ export const App = React.createClass({
       <div className="text-center u-pv++ palm-pv section section--small section--small">
         <p className="text-dark-semi-transparent u-ph palm-ph+ palm-pv+">
           <span className="text-first-letter">I</span> have 8 years experience working from start ups to large companies
-          in both design and engineering roles. I focus in bringing high quality user experiences to the production environment.
+          in both design and engineering roles. I focus on bringing high quality user experiences to the production environment.
         </p>
       </div>
     </section>
